@@ -20,8 +20,8 @@
 body {
   margin: 0;
   background: radial-gradient(circle at 20% 20%, rgba(139, 92, 246, 0.12), transparent 25%),
-    radial-gradient(circle at 80% 0%, rgba(20, 184, 166, 0.14), transparent 25%),
-    var(--bg);
+  radial-gradient(circle at 80% 0%, rgba(20, 184, 166, 0.14), transparent 25%),
+  var(--bg);
   color: var(--text);
   line-height: 1.6;
   min-height: 100vh;
@@ -45,6 +45,19 @@ a:hover {
 .container {
   width: min(1100px, 92%);
   margin: 0 auto;
+}
+
+/* Hide the checkbox */
+.nav-toggle {
+  display: none;
+}
+
+/* Hamburger icon */
+.nav-toggle-label {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+  user-select: none;
 }
 
 .site-header {
@@ -184,115 +197,31 @@ a:hover {
   border-radius: 20px;
   padding: 18px;
   background: radial-gradient(circle at 10% 20%, rgba(139, 92, 246, 0.15), transparent 40%),
-    radial-gradient(circle at 80% 40%, rgba(20, 184, 166, 0.1), transparent 40%),
-    #0c0f1a;
+  radial-gradient(circle at 80% 40%, rgba(20, 184, 166, 0.1), transparent 40%),
+  #0c0f1a;
   box-shadow: 0 25px 60px rgba(0, 0, 0, 0.45);
-}
 
-.card-graphic {
-  position: relative;
-  border-radius: 16px;
-  padding: 30px;
-  background: var(--card);
-  overflow: hidden;
-  min-height: 260px;
+  /* NEW */
   display: flex;
-  align-items: center;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;   /* horizontal centering */
+  justify-content: center; /* vertical if needed */
 }
 
-.orb {
-  position: absolute;
-  width: 170px;
-  height: 170px;
-  border-radius: 50%;
-  filter: blur(60px);
-}
-
-.orb-1 {
-  background: #8b5cf6;
-  top: -20px;
-  left: -20px;
-}
-
-.orb-2 {
-  background: #14b8a6;
-  bottom: -30px;
-  right: -10px;
-}
-
-.device {
-  position: relative;
-  background: #0b0d18;
-  border: 1px solid var(--border);
-  border-radius: 18px;
-  padding: 14px;
-  width: min(360px, 100%);
+.hero-image {
+  display: block;
+  width: 30%;
+  border-radius: 14px;
+  background: #04060d;
   box-shadow: 0 18px 30px rgba(0, 0, 0, 0.35);
 }
 
-.status {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  padding: 6px 10px;
-  background: rgba(255, 255, 255, 0.05);
-  border-radius: 999px;
-  font-size: 12px;
-  color: var(--muted);
-}
-
-.status-dot {
-  width: 9px;
-  height: 9px;
-  border-radius: 50%;
-  background: linear-gradient(135deg, #8b5cf6, #14b8a6);
-}
-
-.device-body {
-  margin-top: 14px;
-  padding: 14px;
+.hero-banner {
+  display: block;
+  width: 100%;
   border-radius: 14px;
-  background: rgba(255, 255, 255, 0.02);
-  border: 1px solid var(--border);
-}
-
-.screen {
-  display: grid;
-  gap: 8px;
-  margin-bottom: 12px;
-}
-
-.bar {
-  height: 10px;
-  border-radius: 10px;
-  background: rgba(255, 255, 255, 0.1);
-}
-
-.bar-lg {
-  width: 90%;
-}
-
-.bar-sm {
-  width: 60%;
-}
-
-.widget {
-  padding: 12px;
-  border-radius: 12px;
-  background: rgba(20, 184, 166, 0.08);
-  border: 1px solid rgba(20, 184, 166, 0.25);
-}
-
-.widget-title {
-  margin: 0 0 4px;
-  font-weight: 700;
-}
-
-.widget-subtitle {
-  margin: 0;
-  color: var(--muted);
-  font-size: 14px;
+  background: #04060d;
+  box-shadow: 0 18px 30px rgba(0, 0, 0, 0.35);
 }
 
 .card-footer {
@@ -367,39 +296,18 @@ a:hover {
   color: var(--muted);
 }
 
-.work-grid {
+.services-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   gap: 16px;
 }
 
-.work-card {
+.service-card {
   border-radius: var(--radius);
   border: 1px solid var(--border);
   padding: 18px;
   background: rgba(255, 255, 255, 0.02);
   position: relative;
-}
-
-.badge {
-  position: absolute;
-  top: 14px;
-  right: 14px;
-  padding: 6px 10px;
-  border-radius: 999px;
-  background: rgba(139, 92, 246, 0.18);
-  font-size: 12px;
-  color: #e5dbff;
-}
-
-.tag {
-  display: inline-block;
-  margin-right: 8px;
-  padding: 6px 10px;
-  border-radius: 10px;
-  background: rgba(255, 255, 255, 0.06);
-  color: var(--muted);
-  font-size: 13px;
 }
 
 .process {
@@ -508,12 +416,34 @@ a:hover {
   font-size: 14px;
 }
 
-@media (max-width: 760px) {
+@media (max-width: 720px) {
+
+  /* Show hamburger icon */
+  .nav-toggle-label {
+    display: block;
+  }
+
+  /* Hide normal nav */
   .nav {
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    background: rgba(8, 9, 16, 0.95);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.4);
+    padding: 12px;
     display: none;
+    flex-direction: column;
+    gap: 12px;
   }
 
   .header-content {
     justify-content: space-between;
+  }
+  
+  /* Show dropdown when toggle is checked */
+  .nav-toggle:checked + .nav-toggle-label + .nav {
+    display: flex;
   }
 }

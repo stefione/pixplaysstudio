@@ -10,213 +10,96 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header class="site-header">
-    <div class="container header-content">
-      <a class="brand" href="#top">
-        <span class="brand-mark">P</span>
-        <span class="brand-name">PixPlay Studio</span>
-      </a>
-      <nav class="nav">
-        <a href="#services">Services</a>
-        <a href="#work">Work</a>
-        <a href="#process">Process</a>
-        <a href="#contact">Contact</a>
-      </nav>
-      <a class="cta ghost" href="#contact">Book a call</a>
+<header class="site-header">
+  <div class="container header-content">
+
+    <a class="brand" href="#top">
+      <img src="assets/pixplays_logo_white.png" alt="Pix Plays Studio" class="hero-image">
+    </a>
+
+    <!-- Hamburger Toggle -->
+    <input type="checkbox" id="nav-toggle" class="nav-toggle">
+    <label for="nav-toggle" class="nav-toggle-label">
+      ☰
+    </label>
+
+    <nav class="nav">
+      <a href="#services">Services</a>
+      <a href="#privacy_policy">Privacy Policy</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="container hero-grid">
+      <div class="hero-copy">
+        <p class="eyebrow">Creative digital studio</p>
+        <h1>Unity-powered games that captivate players.</h1>
+        <p class="lede">
+          PixPlays Studios is a game development studio specializing in Unity Engine. Offering to develop your ideas and bring experiences to life for all to enjoy. Full cycle development from prototyping to a finished product.
+        </p>
+      </div>
+      <div class="hero-card">
+        <img src="assets/banner_img.jpg" alt="Galaxy Arena Elemental Spells promotional artwork" class="hero-banner" />
+      </div>
     </div>
-  </header>
+  </section>
 
-  <main id="top">
-    <section class="hero">
-      <div class="container hero-grid">
-        <div class="hero-copy">
-          <p class="eyebrow">Creative digital studio</p>
-          <h1>Welcome</h1>
-          <p class="lede">
-            PixPlays Studios is a game development studio specializing in Unity Engine. Offering to develop your ideas and bring experiences to life for all to enjoy. Full cycle development from prototyping to a finished product.
-          </p>
-        </div>
-        <div class="hero-card">
-          <div class="card-graphic">
-            <div class="orb orb-1"></div>
-            <div class="orb orb-2"></div>
-            <div class="device">
-              <div class="status">
-                <span class="status-dot"></span>
-                <span>Live preview</span>
-              </div>
-              <div class="device-body">
-                <div class="screen">
-                  <div class="bar"></div>
-                  <div class="bar bar-lg"></div>
-                  <div class="bar bar-sm"></div>
-                  <div class="bar"></div>
-                  <div class="bar bar-lg"></div>
-                </div>
-                <div class="widget">
-                  <p class="widget-title">Launch-ready</p>
-                  <p class="widget-subtitle">Optimized for GitHub Pages deploys.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+  <section class="section alt" id="services">
+    <div class="container">
+      <div class="section-header">
+        <p class="eyebrow">Services</p>
+        <h2>Unlock Your Creativity</h2>
+        <p class="lede">Comprehensive Unity development support, from early prototyping through full-scale shipping.</p>
       </div>
-    </section>
-
-    <section class="section" id="services">
-      <div class="container">
-        <div class="section-header">
-          <p class="eyebrow">Capabilities</p>
-          <h2>Everything you need to stand out online.</h2>
-          <p class="lede">From brand systems to launch-ready websites, we blend design and code so your story is unforgettable.</p>
-        </div>
-        <div class="card-grid">
-          <article class="card">
-            <div class="card-icon">🎨</div>
-            <h3>Visual Identity</h3>
-            <p>Logo refreshes, color systems, and playful illustration styles tailored to your industry.</p>
-            <ul>
-              <li>Brand kits with usage guidelines</li>
-              <li>Iconography and illustrations</li>
-              <li>Social & marketing templates</li>
-            </ul>
-          </article>
-          <article class="card">
-            <div class="card-icon">💻</div>
-            <h3>Web Experiences</h3>
-            <p>Responsive, performant pages with clean HTML and CSS—perfect for GitHub Pages hosting.</p>
-            <ul>
-              <li>Landing pages and micro-sites</li>
-              <li>Component-driven layouts</li>
-              <li>Accessibility-first styling</li>
-            </ul>
-          </article>
-          <article class="card">
-            <div class="card-icon">🚀</div>
-            <h3>Launch Support</h3>
-            <p>Content, QA, and optimization so your new brand or feature launches smoothly.</p>
-            <ul>
-              <li>Copywriting & art direction</li>
-              <li>Performance audits</li>
-              <li>Release playbooks</li>
-            </ul>
-          </article>
-        </div>
+      <div class="services-grid">
+        <article class="service-card">
+          <h3>Prototyping</h3>
+          <p>Create a prototype version of your idea.</p>
+        </article>
+        <article class="service-card">
+          <h3>VFX Creation</h3>
+          <p>Creating full visual effects for your game in any style.</p>
+        </article>
+        <article class="service-card">
+          <h3>Software Development</h3>
+          <p>Developing the software from start to finish inside of Unity Platform and deploying on various platforms.</p>
+        </article>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section class="section alt" id="work">
-      <div class="container">
-        <div class="section-header">
-          <p class="eyebrow">Selected work</p>
-          <h2>Playful, purposeful, and built to perform.</h2>
-          <p class="lede">A quick look at recent launches crafted by the PixPlay team.</p>
-        </div>
-        <div class="work-grid">
-          <article class="work-card">
-            <div class="badge">SaaS</div>
-            <h3>Orbit CRM</h3>
-            <p>Created a vibrant gradient-driven brand and a feature-focused landing page that increased signups by 34%.</p>
-            <span class="tag">Design systems</span>
-            <span class="tag">Webflow → Pages</span>
-          </article>
-          <article class="work-card">
-            <div class="badge">Ecommerce</div>
-            <h3>Mossy Studio</h3>
-            <p>Crafted product storytelling, custom icons, and a lightweight storefront optimized for mobile conversions.</p>
-            <span class="tag">Illustration</span>
-            <span class="tag">Responsive UX</span>
-          </article>
-          <article class="work-card">
-            <div class="badge">Fintech</div>
-            <h3>North Ledger</h3>
-            <p>Designed trust-focused visuals, motion micro-interactions, and documentation for their developer hub.</p>
-            <span class="tag">UI/UX</span>
-            <span class="tag">Docs</span>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="process">
-      <div class="container process">
-        <div>
-          <p class="eyebrow">Process</p>
-          <h2>Simple steps, powerful outcomes.</h2>
-          <p class="lede">We keep projects collaborative and transparent, blending strategic workshops with quick design iterations.</p>
-        </div>
-        <ol class="steps">
-          <li>
-            <div class="step-icon">1</div>
-            <div>
-              <h3>Discover & align</h3>
-              <p>We define goals, audience, and success metrics in a fast kickoff session.</p>
-            </div>
-          </li>
-          <li>
-            <div class="step-icon">2</div>
-            <div>
-              <h3>Design & build</h3>
-              <p>Weekly design drops paired with clean, documented code ready for GitHub Pages.</p>
-            </div>
-          </li>
-          <li>
-            <div class="step-icon">3</div>
-            <div>
-              <h3>Launch & refine</h3>
-              <p>We handle QA, speed checks, and final polish before launch day.</p>
-            </div>
-          </li>
-        </ol>
-      </div>
-    </section>
-
-    <section class="section contact" id="contact">
-      <div class="container contact-card">
-        <div>
-          <p class="eyebrow">Get in touch</p>
-          <h2>Let’s build something delightful together.</h2>
-          <p class="lede">Tell us about your next launch—brand, product, or campaign—and we’ll reply within one business day.</p>
-        </div>
-        <form class="contact-form">
-          <label>
-            Name
-            <input type="text" name="name" placeholder="Alex Founder" required />
-          </label>
-          <label>
-            Email
-            <input type="email" name="email" placeholder="you@example.com" required />
-          </label>
-          <label>
-            Project details
-            <textarea name="details" rows="4" placeholder="Website refresh, launch in Q3…" required></textarea>
-          </label>
-          <button type="submit" class="cta">Send message</button>
-        </form>
-      </div>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="container footer-grid">
+  <section class="section contact" id="contact">
+    <div class="container contact-card">
       <div>
-        <div class="brand">
-          <span class="brand-mark">P</span>
-          <span class="brand-name">PixPlay Studio</span>
-        </div>
-        <p class="small">Playful design, precise execution. Serving ambitious teams worldwide.</p>
-      </div>
-      <div class="footer-links">
-        <a href="#services">Services</a>
-        <a href="#work">Work</a>
-        <a href="#process">Process</a>
-        <a href="#contact">Contact</a>
-      </div>
-      <div class="footer-meta">
-        <p class="small">Made for GitHub Pages • © 2024 PixPlay Studio</p>
+        <p class="eyebrow">Contact</p>
+        <h2>Email</h2>
+        <p class="lede"><a href="mailto:pixplaysstudio@gmail.com">pixplaysstudio@gmail.com</a></p>
       </div>
     </div>
-  </footer>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <div class="brand">
+        <img src="assets/pixplays_logo_white.png" alt="Pix Plays Studio" class="hero-image">
+      </div>
+      <p class="small">Playful design, precise execution. Serving ambitious teams worldwide.</p>
+    </div>
+    <div class="footer-links">
+      <a href="#services">Services</a>
+      <a href="#privacy_policy">Privacy Policy</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <div class="footer-meta">
+      <p class="small">© 2023 by PixPlays Studio. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
 </body>
 </html>
